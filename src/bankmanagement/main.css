@@ -1,0 +1,28 @@
+.nav-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 0 0 0 30;
+    -fx-font-size: 14px;
+    -fx-transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    -fx-background-color: #34495e;
+}
+
+.nav-btn.active {
+    -fx-background-color: #3498db;
+    -fx-border-width: 0 0 0 4;
+    -fx-border-color: #2980b9;
+}
+
+.nav-btn .image-view {
+    -fx-opacity: 0.8;
+}
+
+.nav-btn:hover .image-view,
+.nav-btn.active .image-view {
+    -fx-opacity: 1;
+}

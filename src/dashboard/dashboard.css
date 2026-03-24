@@ -1,0 +1,89 @@
+.stat-card {
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+    -fx-min-width: 200px;
+    -fx-min-height: 150px;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 4);
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0, 0, 6);
+}
+
+.card-icon {
+    -fx-font-size: 40px;
+}
+
+.card-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #666666;
+}
+
+.card-value {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.chart-title {
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.bar-chart {
+    -fx-background-color: transparent;
+}
+
+.bar-chart .chart-bar {
+    -fx-bar-fill: #4a90e2;
+}
+
+.bar-chart .chart-bar:nth-child(1) {
+    -fx-bar-fill: #e74c3c;
+}
+
+.bar-chart .chart-bar:nth-child(2) {
+    -fx-bar-fill: #3498db;
+}
+
+.bar-chart .chart-bar:nth-child(3) {
+    -fx-bar-fill: #2ecc71;
+}
+
+.bar-chart .chart-bar:nth-child(4) {
+    -fx-bar-fill: #f39c12;
+}
+
+.bar-chart .chart-bar:nth-child(5) {
+    -fx-bar-fill: #9b59b6;
+}
+
+.bar-chart .chart-bar:nth-child(6) {
+    -fx-bar-fill: #1abc9c;
+}
+
+.bar-chart .chart-bar:nth-child(7) {
+    -fx-bar-fill: #e67e22;
+}
+
+.bar-chart .chart-bar:nth-child(8) {
+    -fx-bar-fill: #34495e;
+}
+
+.bar-chart .chart-plot-background {
+    -fx-background-color: #f8f9fa;
+}
+
+.bar-chart .axis-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+.bar-chart .chart-horizontal-grid-lines {
+    -fx-stroke: #e0e0e0;
+}
