@@ -21,11 +21,9 @@ public class BankManagement extends Application {
     
     @Override
     public void start(Stage primaryStage) throws IOException {
-         Parent root = FXMLLoader.load(getClass().getResource("/tableView/tableViewBank.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/main/main.fxml"));
         Scene scene = new Scene(root);
-        //primaryStage.initStyle(StageStyle.UTILITY);
         primaryStage.initStyle(StageStyle.UNDECORATED);
-        //primaryStage.setTitle("Hello World!");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
