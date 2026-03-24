@@ -1,0 +1,91 @@
+.mainFxmlClass {
+    -fx-font-family: "Open Sans", "Segoe UI", sans-serif;
+}
+
+.page-title {
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+}
+
+.stat-card {
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 5);
+    -fx-padding: 15;
+    -fx-spacing: 5;
+    -fx-cursor: hand;
+}
+
+.stat-card:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(108, 99, 255, 0.3), 15, 0, 0, 8);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.card-icon {
+    -fx-text-fill: #6C63FF;
+}
+
+.card-title {
+    -fx-text-fill: #737373;
+    -fx-font-size: 13px;
+}
+
+.card-value {
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+}
+
+.chart-container {
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 5);
+    -fx-padding: 20;
+    -fx-spacing: 10;
+}
+
+.chart-title {
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+}
+
+.bar-chart {
+    -fx-background-color: transparent;
+}
+
+.bar-chart .chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.bar-chart .chart-vertical-grid-lines {
+    -fx-stroke: #E1E1E1;
+}
+
+.bar-chart .chart-horizontal-grid-lines {
+    -fx-stroke: #E1E1E1;
+}
+
+.bar-chart .axis {
+    -fx-tick-label-fill: #737373;
+    -fx-tick-length: 10;
+}
+
+.bar-chart .axis-label {
+    -fx-text-fill: #333333;
+    -fx-font-size: 13px;
+}
+
+.bar-chart .chart-bar {
+    -fx-background-radius: 5 5 0 0;
+    -fx-border-radius: 5 5 0 0;
+}
+
+.bar-chart .chart-legend {
+    -fx-background-color: transparent;
+}
+
+.bar-chart .chart-legend-item {
+    -fx-text-fill: #333333;
+}
