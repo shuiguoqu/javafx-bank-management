@@ -19,15 +19,35 @@ import javafx.stage.StageStyle;
  */
 public class BankManagement extends Application {
     
+    private static Stage primaryStage;
+    
     @Override
-    public void start(Stage primaryStage) throws IOException {
-         Parent root = FXMLLoader.load(getClass().getResource("/tableView/tableViewBank.fxml"));
-        Scene scene = new Scene(root);
-        //primaryStage.initStyle(StageStyle.UTILITY);
-        primaryStage.initStyle(StageStyle.UNDECORATED);
-        //primaryStage.setTitle("Hello World!");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+    public void start(Stage stage) throws IOException {
+        primaryStage = stage;
+        showDashboard();
+    }
+    
+    public static void showDashboard() {
+        try {
+            Parent root = FXMLLoader.load(BankManagement.class.getResource("/dashboard/dashboard.fxml"));
+            Scene scene = new Scene(root);
+            primaryStage.initStyle(StageStyle.UNDECORATED);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        } catch (IOException e) {
+            System.out.println("ERROR : " + e.getMessage());
+        }
+    }
+    
+    public static void showAccountManagement() {
+        try {
+            Parent root = FXMLLoader.load(BankManagement.class.getResource("/tableView/tableViewBank.fxml"));
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        } catch (IOException e) {
+            System.out.println("ERROR : " + e.getMessage());
+        }
     }
 
     /**
@@ -35,6 +55,10 @@ public class BankManagement extends Application {
      */
     public static void main(String[] args) {
         launch(args);
+    }
+    
+    public static Stage getPrimaryStage() {
+        return primaryStage;
     }
     
 }
